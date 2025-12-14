@@ -1,0 +1,48 @@
+[general]
+# Use pulseaudio (most common)
+method = wire
+
+# Lower framerate for performance
+framerate = 60
+
+# Fewer bars for less CPU usage
+bars = 30
+
+# Lower sensitivity for background music
+sensitivity = 70
+
+# Bit format for efficiency
+bit_format = 16bit
+
+[input]
+# Process every 2nd sample for performance
+process_smoothing = 200
+
+[output]
+method = ncurses
+
+# Simple bar style
+style = default
+
+# Thin bars
+bar_width = 0.5
+bar_spacing = 0
+
+# Softer colors that won't distract
+foreground = '#555555'
+background = default
+
+[smoothing]
+# Heavy smoothing for calm visualization
+noise_reduction = 0.5
+
+# Smooth movements
+integral = 0.3
+
+# Disable heavy effects
+monstercat = 0
+waves = 1
+
+[color]
+# Simple single color (no gradient for performance)
+gradient = 0
